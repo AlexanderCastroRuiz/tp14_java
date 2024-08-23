@@ -2,13 +2,10 @@ package ar.edu.et7.business;
 
 public class Calculos implements CalculosInterface {
 
-	@Override
-	public float discount(float amount, float discount) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    @Override
+    public float discount(float amount, float discount) {
+        return amount - (amount * (discount / 100));
+    }
 
-	//TODO implementar los métodos de la interface
-
-
+    // Implementar otros métodos de la interfaz si es necesario
 }
